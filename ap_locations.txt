@@ -1,0 +1,9 @@
+AP1: MAC f8:cf:c5:97:e0:9e ; Location (304, 0)
+
+AP2: MAC ec:d0:9f:db:e8:1f ; Location (0, 0)
+
+AP3: MAC cc:fa:00:cb:f4:1d ; Location (168, 317)
+
+ 
+
+The hided AP: MAC  f8:a9:d0:1c:b4:34 ; Location (?, ?)
