@@ -11,3 +11,4 @@ for filename in glob.glob('lab2_rss/*.txt'):
     start_df.plot(x='time', y='rss')
     # print(start_df.dtypes)
     plt.show()
+
