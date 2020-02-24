@@ -5,8 +5,6 @@ import columns
 from math import log10, sqrt
 import statsmodels.api as sm
 
-FILE="lab2_rss/rss-1523028407.499511.txt"
-
 COORDS = {
     "f8:cf:c5:97:e0:9e" : (304, 0),
     "ec:d0:9f:db:e8:1f" : (0, 0),
