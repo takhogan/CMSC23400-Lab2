@@ -7,6 +7,7 @@ from sklearn import linear_model
 import matplotlib.pyplot as plt
 from calcpathloss import *
 from gaussian_blur import blur_df
+import find_distance.py
 
 
 for filename in glob.glob('lab2_rss/*.txt'):
@@ -41,6 +42,8 @@ for filename in glob.glob('lab2_rss/*.txt'):
     plt.show()
 
     coefficients = (model.intercept_, model.coef_)
+    prediction = find_distance(model.intercept_, model.coef_, dataframe['rss'])
+    print(prediction)
     print(coefficients)
     exit(0)
 
