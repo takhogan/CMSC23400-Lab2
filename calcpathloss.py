@@ -15,23 +15,25 @@ def dist(p1, p2):
     return sqrt(pow(p2[0] - p1[0], 2) + pow(p2[1] - p1[1], 2))
 
 def main():
+    pass
     # import data
     # columns: xpos | ypos | rss | macid
-    dataframe = columns.parse_training_data_file(FILE)
+
+    # dataframe = columns.parse_training_data_file(FILE)
     # calc logd
-    logd = []
-    for i, row in dataframe.iterrows():
-        d = dist(COORDS[row['macid']], (row['xpos'], row['ypos']))
-        logd.append(log10(d))
-    dataframe['logd'] = logd
-    # now let's do a linear regression! rss = B + A[logd]
-    X = sm.add_constant(dataframe['logd']) 
-    Y = dataframe['rss']
+    # logd = []
+    # for i, row in dataframe.iterrows():
+    #     d = dist(COORDS[row['macid']], (row['xpos'], row['ypos']))
+    #     logd.append(log10(d))
+    # dataframe['logd'] = logd
+    # # now let's do a linear regression! rss = B + A[logd]
+    # X = sm.add_constant(dataframe['logd'])
+    # Y = dataframe['rss']
 
-    model = sm.OLS(Y.astype(float), X.astype(float)).fit()
-    predictions = model.predict(X)
-
-    print(model.summary())
+    # model = sm.OLS(Y.astype(float), X.astype(float)).fit()
+    # predictions = model.predict(X)
+    #
+    # print(model.summary())
 
 
 if __name__ == '__main__':
