@@ -7,7 +7,7 @@ from sklearn import linear_model
 import matplotlib.pyplot as plt
 from calcpathloss import *
 from gaussian_blur import blur_df
-import find_distance.py
+import find_distance
 
 
 for filename in glob.glob('lab2_rss/*.txt'):
